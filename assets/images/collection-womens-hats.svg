@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title">
+	<title id="title">Women's hat collection</title>
+	<rect width="700" height="920" fill="#070707"/>
+	<radialGradient id="g" cx=".5" cy=".4" r=".58"><stop offset="0" stop-color="#777"/><stop offset=".5" stop-color="#242424"/><stop offset="1" stop-color="#030303"/></radialGradient>
+	<rect width="700" height="920" fill="url(#g)"/>
+	<path d="M270 205c32-88 104-126 215-101 85 19 130 82 135 188l-43 109H246z" fill="#111"/>
+	<ellipse cx="410" cy="362" rx="246" ry="59" fill="#0c0c0c"/>
+	<path d="M210 450c45 77 100 117 166 119 52 1 113-31 183-97 46 92 60 178 42 258H217c-35-93-38-186-7-280z" fill="#111"/>
+	<path d="M298 540c-33 118-26 244 20 380h-178c-20-155 33-282 158-380z" fill="#050505"/>
+	<rect width="700" height="920" fill="#000" opacity=".4"/>
+</svg>

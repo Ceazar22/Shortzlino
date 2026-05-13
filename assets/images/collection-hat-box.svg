@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title">
+	<title id="title">Luxury hat boxes</title>
+	<defs><linearGradient id="g" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#c5c5bf"/><stop offset="1" stop-color="#3a3a38"/></linearGradient></defs>
+	<rect width="700" height="920" fill="#bcbcb7"/>
+	<g fill="none" stroke="#555" stroke-width="12" opacity=".65">
+		<path d="M-80 138h360v260H-80zM280 138h360v260H280zM640 138h360v260H640z"/>
+		<path d="M-80 398h360v260H-80zM280 398h360v260H280zM640 398h360v260H640z"/>
+		<path d="M-80 658h360v260H-80zM280 658h360v260H280zM640 658h360v260H640z"/>
+	</g>
+	<rect width="700" height="920" fill="url(#g)" opacity=".35"/>
+	<rect width="700" height="920" fill="#000" opacity=".18"/>
+</svg>

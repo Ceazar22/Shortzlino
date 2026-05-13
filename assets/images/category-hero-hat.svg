@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 500" role="img" aria-labelledby="title">
+	<title id="title">Close-up of a warm brown felt hat</title>
+	<defs>
+		<linearGradient id="bg" x1="0" x2="1">
+			<stop stop-color="#000"/>
+			<stop offset=".35" stop-color="#14100b"/>
+			<stop offset="1" stop-color="#000"/>
+		</linearGradient>
+		<radialGradient id="felt" cx=".6" cy=".4" r=".54">
+			<stop offset="0" stop-color="#7d6038"/>
+			<stop offset=".48" stop-color="#4e391f"/>
+			<stop offset="1" stop-color="#080604"/>
+		</radialGradient>
+		<filter id="grain">
+			<feTurbulence baseFrequency=".8" numOctaves="4" seed="17" type="fractalNoise"/>
+			<feColorMatrix values="0 0 0 0 .22 0 0 0 0 .16 0 0 0 0 .09 0 0 0 .24 0"/>
+			<feBlend in2="SourceGraphic" mode="multiply"/>
+		</filter>
+	</defs>
+	<rect width="1920" height="500" fill="url(#bg)"/>
+	<path d="M470 494c48-270 210-430 488-479 328-58 562 78 700 407l5 72z" fill="url(#felt)" filter="url(#grain)"/>
+	<path d="M420 405c234-57 500-81 798-70 207 7 380 35 521 83-106 48-307 70-603 67-349 1-588-26-716-80z" fill="#1b1007" opacity=".9"/>
+	<path d="M690 372c230-35 510-35 840 0" stroke="#6d502c" stroke-width="8" opacity=".45"/>
+	<path d="M1230 356h78v116h-78z" fill="#2e1e10" opacity=".75"/>
+	<rect width="1920" height="500" fill="#000" opacity=".54"/>
+	<rect y="270" width="1920" height="230" fill="#000" opacity=".34"/>
+</svg>

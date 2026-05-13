@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title">
+	<title id="title">Men's hat collection</title>
+	<rect width="700" height="920" fill="#050505"/>
+	<radialGradient id="g" cx=".42" cy=".43" r=".5"><stop offset="0" stop-color="#8b8b86"/><stop offset=".5" stop-color="#343434"/><stop offset="1" stop-color="#050505"/></radialGradient>
+	<circle cx="325" cy="506" r="190" fill="url(#g)" opacity=".52"/>
+	<path d="M200 440c26-130 103-193 230-182 115 11 177 78 187 201l-15 114H205z" fill="#595956"/>
+	<ellipse cx="360" cy="520" rx="297" ry="62" fill="#73736f"/>
+	<path d="M155 512c135 47 303 54 507 9-54 61-154 92-300 93-129 1-198-34-207-102z" fill="#2b2b2a"/>
+	<path d="M210 613c36 150 123 239 262 267H0V690c45-47 115-73 210-77z" fill="#050505"/>
+	<rect width="700" height="920" fill="#000" opacity=".35"/>
+</svg>

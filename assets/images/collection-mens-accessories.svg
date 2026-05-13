@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title">
+	<title id="title">Men's leather accessories</title>
+	<defs><linearGradient id="wood" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#8b8277"/><stop offset="1" stop-color="#34302d"/></linearGradient></defs>
+	<rect width="700" height="920" fill="url(#wood)"/>
+	<g transform="rotate(-18 350 460)">
+		<rect x="205" y="330" width="320" height="210" rx="22" fill="#111"/>
+		<rect x="226" y="352" width="278" height="168" rx="14" fill="#1b1b1a" stroke="#6f6860" stroke-width="8"/>
+		<path d="M285 420c45 40 100 42 165 5" fill="none" stroke="#6b6259" stroke-width="12"/>
+	</g>
+	<path d="M0 0h700v920H0z" fill="#000" opacity=".25"/>
+</svg>

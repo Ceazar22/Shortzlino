@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 760" role="img" aria-labelledby="title">
+	<title id="title">Intricate Italian decorative craftsmanship</title>
+	<defs>
+		<linearGradient id="bg" x1="0" x2="1"><stop stop-color="#8b816b"/><stop offset=".7" stop-color="#403b31"/><stop offset="1" stop-color="#0c1712"/></linearGradient>
+		<pattern id="p" width="210" height="760" patternUnits="userSpaceOnUse">
+			<rect width="210" height="760" fill="none"/>
+			<path d="M105 0v760" stroke="#ddd2b6" stroke-width="14" opacity=".38"/>
+			<circle cx="105" cy="72" r="28" fill="#c3b99f" opacity=".52"/>
+			<circle cx="105" cy="164" r="28" fill="#c3b99f" opacity=".52"/>
+			<circle cx="105" cy="256" r="28" fill="#c3b99f" opacity=".52"/>
+			<circle cx="105" cy="348" r="28" fill="#c3b99f" opacity=".52"/>
+			<circle cx="105" cy="440" r="28" fill="#c3b99f" opacity=".52"/>
+			<circle cx="105" cy="532" r="28" fill="#c3b99f" opacity=".52"/>
+			<circle cx="105" cy="624" r="28" fill="#c3b99f" opacity=".52"/>
+			<path d="M32 0c92 82 92 168 0 250 92 82 92 168 0 250 92 82 92 168 0 260M178 0c-92 82-92 168 0 250-92 82-92 168 0 250-92 82-92 168 0 260" fill="none" stroke="#e2d9bf" stroke-width="7" opacity=".34"/>
+		</pattern>
+	</defs>
+	<rect width="1920" height="760" fill="url(#bg)"/>
+	<rect width="1920" height="760" fill="url(#p)" opacity=".8"/>
+	<rect width="1920" height="760" fill="#000" opacity=".4"/>
+	<rect y="430" width="1920" height="330" fill="#000" opacity=".42"/>
+</svg>

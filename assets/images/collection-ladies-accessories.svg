@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 920" role="img" aria-labelledby="title">
+	<title id="title">Ladies accessories</title>
+	<rect width="700" height="920" fill="#eeeeea"/>
+	<path d="M0 0h355v920H0z" fill="#e1e1dc"/>
+	<path d="M360 0h340v555H360z" fill="#f6f6f3"/>
+	<path d="M360 555h340v365H360z" fill="#d8d7d1"/>
+	<g fill="none" stroke="#61615e" stroke-width="12">
+		<path d="M375 560c-10 86 95 91 84 0"/>
+		<path d="M490 560c-10 86 95 91 84 0"/>
+	</g>
+	<g fill="#f8f8f4" stroke="#777" stroke-width="7">
+		<circle cx="375" cy="560" r="16"/>
+		<circle cx="459" cy="560" r="16"/>
+		<circle cx="490" cy="560" r="16"/>
+		<circle cx="574" cy="560" r="16"/>
+	</g>
+</svg>
