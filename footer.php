@@ -4,6 +4,10 @@
  *
  * @package Shortzlino
  */
+
+if (! defined('ABSPATH')) {
+	exit;
+}
 ?>
 </main>
 

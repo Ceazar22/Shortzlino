@@ -5,6 +5,10 @@
  * @package Shortzlino
  */
 
+if (! defined('ABSPATH')) {
+	exit;
+}
+
 $title       = $args['title'] ?? get_the_title();
 $description = $args['description'] ?? '';
 $modifier    = $args['modifier'] ?? '';
@@ -20,13 +24,13 @@ if (! $image && is_tax('product_cat')) {
 }
 
 $classes     = trim('page-hero ' . $modifier . ($image ? ' page-hero--image' : ''));
-$style       = $image ? sprintf(' style="background-image: url(%s);"', esc_url($image)) : '';
+$style       = $image ? sprintf("background-image: url('%s');", esc_url_raw($image)) : '';
 ?>
 
-<section class="<?php echo esc_attr($classes); ?>"<?php echo $style; ?>>
+<section class="<?php echo esc_attr($classes); ?>"<?php echo $style ? ' style="' . esc_attr($style) . '"' : ''; ?>>
 	<div class="page-hero__content">
 		<?php if (! empty($title)) : ?>
-			<h1 class="page-hero__title"><?php echo wp_kses_post($title); ?></h1>
+			<h1 class="page-hero__title"><?php echo wp_kses($title, array('span' => array())); ?></h1>
 		<?php endif; ?>
 
 		<?php if (! empty($description)) : ?>

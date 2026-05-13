@@ -5,6 +5,10 @@
  * @package Shortzlino
  */
 
+if (! defined('ABSPATH')) {
+	exit;
+}
+
 if (post_password_required()) {
 	return;
 }
@@ -37,4 +41,3 @@ if (post_password_required()) {
 		<?php comment_form(); ?>
 	</div>
 </section>
-

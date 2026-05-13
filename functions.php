@@ -5,6 +5,10 @@
  * @package Shortzlino
  */
 
+if (! defined('ABSPATH')) {
+	exit;
+}
+
 if (! defined('SHORTZLINO_VERSION')) {
 	define('SHORTZLINO_VERSION', '0.1.0');
 }

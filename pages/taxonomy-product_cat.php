@@ -36,6 +36,11 @@ $product_order_options = array(
 	'price_asc'  => __('Price: Low to High', 'shortzlino'),
 	'price_desc' => __('Price: High to Low', 'shortzlino'),
 );
+
+if (! array_key_exists($product_sort, $product_order_options)) {
+	$product_sort = 'latest';
+}
+
 $product_query_args = array(
 	'post_type'      => 'product',
 	'post_status'    => 'publish',

@@ -20,6 +20,7 @@ while (have_posts()) :
 		continue;
 	}
 
+	$product_title = get_the_title();
 	$image_ids = array();
 
 	if (has_post_thumbnail()) {
@@ -53,8 +54,8 @@ while (have_posts()) :
 							$large_image = wp_get_attachment_image_src($image_id, 'large');
 							$full_image  = wp_get_attachment_image_src($image_id, 'full');
 							?>
-							<button class="single-product-gallery__thumb<?php echo 0 === $index ? ' is-active' : ''; ?>" type="button" data-large-image="<?php echo esc_url($large_image ? $large_image[0] : ''); ?>" data-full-image="<?php echo esc_url($full_image ? $full_image[0] : ''); ?>" data-image-alt="<?php echo esc_attr(get_the_title()); ?>">
-								<?php echo wp_get_attachment_image($image_id, 'thumbnail', false, array('alt' => get_the_title())); ?>
+							<button class="single-product-gallery__thumb<?php echo 0 === $index ? ' is-active' : ''; ?>" type="button" data-large-image="<?php echo esc_url($large_image ? $large_image[0] : ''); ?>" data-full-image="<?php echo esc_url($full_image ? $full_image[0] : ''); ?>" data-image-alt="<?php echo esc_attr($product_title); ?>">
+								<?php echo wp_get_attachment_image($image_id, 'thumbnail', false, array('alt' => $product_title)); ?>
 							</button>
 						<?php endforeach; ?>
 					</div>
@@ -62,7 +63,7 @@ while (have_posts()) :
 					<div class="single-product-gallery__main">
 						<figure>
 							<a class="single-product-gallery__zoom" href="<?php echo esc_url(wp_get_attachment_image_url($main_image_id, 'full')); ?>">
-								<?php echo wp_get_attachment_image($main_image_id, 'large', false, array('alt' => get_the_title(), 'class' => 'single-product-gallery__main-image')); ?>
+								<?php echo wp_get_attachment_image($main_image_id, 'large', false, array('alt' => $product_title, 'class' => 'single-product-gallery__main-image')); ?>
 							</a>
 						</figure>
 					</div>
@@ -75,11 +76,11 @@ while (have_posts()) :
 				<?php woocommerce_output_all_notices(); ?>
 
 				<p class="single-product-summary__eyebrow"><?php esc_html_e('Shortzlino Collection', 'shortzlino'); ?></p>
-				<h1><?php the_title(); ?></h1>
+				<h1><?php echo esc_html($product_title); ?></h1>
 
 				<?php if ($product->get_average_rating()) : ?>
 					<div class="single-product-summary__rating">
-						<?php echo wc_get_rating_html($product->get_average_rating(), $product->get_rating_count()); ?>
+						<?php echo wp_kses_post(wc_get_rating_html($product->get_average_rating(), $product->get_rating_count())); ?>
 						<span><?php echo esc_html($product->get_review_count()); ?> <?php esc_html_e('reviews', 'shortzlino'); ?></span>
 					</div>
 				<?php endif; ?>

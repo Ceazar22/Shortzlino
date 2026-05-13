@@ -5,6 +5,10 @@
  * @package Shortzlino
  */
 
+if (! defined('ABSPATH')) {
+	exit;
+}
+
 $product = function_exists('wc_get_product') ? wc_get_product(get_the_ID()) : null;
 ?>
 
@@ -19,7 +23,7 @@ $product = function_exists('wc_get_product') ? wc_get_product(get_the_ID()) : nu
 
 	<div class="product-card__body">
 		<h2 class="product-card__title">
-			<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+			<a href="<?php the_permalink(); ?>"><?php echo esc_html(get_the_title()); ?></a>
 		</h2>
 
 		<?php if ($product) : ?>

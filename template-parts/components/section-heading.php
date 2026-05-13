@@ -5,6 +5,10 @@
  * @package Shortzlino
  */
 
+if (! defined('ABSPATH')) {
+	exit;
+}
+
 $eyebrow     = $args['eyebrow'] ?? '';
 $title       = $args['title'] ?? '';
 $description = $args['description'] ?? '';

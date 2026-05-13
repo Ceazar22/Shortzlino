@@ -5,6 +5,10 @@
  * @package Shortzlino
  */
 
+if (! defined('ABSPATH')) {
+	exit;
+}
+
 if (! has_post_thumbnail()) {
 	return;
 }
@@ -13,4 +17,3 @@ if (! has_post_thumbnail()) {
 <figure class="featured-media">
 	<?php the_post_thumbnail('large'); ?>
 </figure>
-

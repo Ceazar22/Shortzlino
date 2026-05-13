@@ -4,6 +4,10 @@
  *
  * @package Shortzlino
  */
+
+if (! defined('ABSPATH')) {
+	exit;
+}
 ?>
 
 <section class="content-band">
@@ -13,4 +17,3 @@
 		<?php get_search_form(); ?>
 	</div>
 </section>
-
