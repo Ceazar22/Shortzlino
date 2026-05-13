@@ -59,11 +59,11 @@ $material_details = array(
 		<p class="home-hero__eyebrow"><?php esc_html_e('Spring / Summer 2025', 'shortzlino'); ?></p>
 		<h1><?php esc_html_e('Timeless Elegance', 'shortzlino'); ?></h1>
 		<p><?php esc_html_e('Handcrafted luxury hats made from the finest pure wool felt. Where Italian tradition meets contemporary design.', 'shortzlino'); ?></p>
-		<a class="luxury-button" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php esc_html_e('Explore Collection', 'shortzlino'); ?></a>
+		<a class="luxury-button" href="#collections"><?php esc_html_e('Explore Collection', 'shortzlino'); ?></a>
 	</div>
 </section>
 
-<section class="collections-section" aria-labelledby="collections-title">
+<section id="collections" class="collections-section" aria-labelledby="collections-title">
 	<div class="collections-section__inner">
 		<div class="luxury-heading">
 			<span class="ornament-line"></span>
@@ -140,7 +140,7 @@ $material_details = array(
 		<p class="home-hero__eyebrow"><?php esc_html_e('Shortzlino Collection', 'shortzlino'); ?></p>
 		<h2><?php esc_html_e('Crafted for Distinction', 'shortzlino'); ?></h2>
 		<p><?php esc_html_e('Every piece tells a story of Italian artistry and uncompromising quality. Handcrafted from pure wool felt in the heart of Tuscany.', 'shortzlino'); ?></p>
-		<a class="luxury-button" href="<?php echo esc_url(home_url('/shop/')); ?>"><?php esc_html_e('Explore Collection', 'shortzlino'); ?></a>
+		<a class="luxury-button" href="#collections"><?php esc_html_e('Explore Collection', 'shortzlino'); ?></a>
 	</div>
 </section>
 
