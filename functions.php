@@ -73,18 +73,29 @@ function shortzlino_widgets_init() {
 add_action('widgets_init', 'shortzlino_widgets_init');
 
 function shortzlino_scripts() {
+	$theme_style_path = get_stylesheet_directory() . '/style.css';
+	$main_style_path  = get_theme_file_path('assets/css/main.css');
+	$main_script_path = get_theme_file_path('assets/js/main.js');
+
+	wp_enqueue_style(
+		'shortzlino-style',
+		get_stylesheet_uri(),
+		array(),
+		file_exists($theme_style_path) ? filemtime($theme_style_path) : SHORTZLINO_VERSION
+	);
+
 	wp_enqueue_style(
 		'shortzlino-main',
-		get_template_directory_uri() . '/assets/css/main.css',
-		array(),
-		SHORTZLINO_VERSION
+		get_theme_file_uri('assets/css/main.css'),
+		array('shortzlino-style'),
+		file_exists($main_style_path) ? filemtime($main_style_path) : SHORTZLINO_VERSION
 	);
 
 	wp_enqueue_script(
 		'shortzlino-main',
-		get_template_directory_uri() . '/assets/js/main.js',
+		get_theme_file_uri('assets/js/main.js'),
 		array(),
-		SHORTZLINO_VERSION,
+		file_exists($main_script_path) ? filemtime($main_script_path) : SHORTZLINO_VERSION,
 		true
 	);
 }

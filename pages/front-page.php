@@ -95,7 +95,7 @@ $material_details = array(
 					<?php if ($term->description) : ?>
 						<p><?php echo esc_html($term->description); ?></p>
 					<?php endif; ?>
-					<a class="collection-card__link" href="<?php echo esc_url($term_link); ?>"><?php esc_html_e('View Collection', 'shortzlino'); ?> <span aria-hidden="true">-&gt;</span></a>
+					
 				</article>
 			<?php endforeach; ?>
 		</div>
