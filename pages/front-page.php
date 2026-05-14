@@ -29,7 +29,7 @@ if (taxonomy_exists('product_cat')) {
 
 $craft_stats = array(
 	array(
-		'value' => '100%',
+		'value' => '1001%',
 		'label' => __('Pure Wool Felt', 'shortzlino'),
 		'text'  => __('Only the finest Australian merino wool, carefully selected for its superior quality and texture.', 'shortzlino'),
 	),
