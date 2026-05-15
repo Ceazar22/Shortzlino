@@ -56,7 +56,7 @@ $material_details = array(
 <section class="home-hero home-hero--timeless">
 	<div class="home-hero__content">
 		<span class="ornament-line"></span>
-		<p class="home-hero__eyebrow"><?php esc_html_e('Spring / Summer 2025123', 'shortzlino'); ?></p>
+		<p class="home-hero__eyebrow"><?php esc_html_e('Spring / Summer 2025', 'shortzlino'); ?></p>
 		<h1><?php esc_html_e('Timeless Elegance', 'shortzlino'); ?></h1>
 		<p><?php esc_html_e('Handcrafted luxury hats made from the finest pure wool felt. Where Italian tradition meets contemporary design.', 'shortzlino'); ?></p>
 		<a class="luxury-button" href="#collections"><?php esc_html_e('Explore Collection', 'shortzlino'); ?></a>
