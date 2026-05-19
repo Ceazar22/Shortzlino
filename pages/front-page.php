@@ -39,7 +39,7 @@ $craft_stats = array(
 		'text'  => __('Each hat requires two full days of meticulous handwork by our master artisans.', 'shortzlino'),
 	),
 	array(
-		'value' => '19241',
+		'value' => '1924',
 		'label' => __('Heritage Since', 'shortzlino'),
 		'text'  => __('A century of tradition, combining time-honored techniques with contemporary design.', 'shortzlino'),
 	),
