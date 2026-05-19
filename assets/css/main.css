@@ -909,17 +909,14 @@ img {
 .product-card__media {
 	display: block;
 	overflow: hidden;
-	aspect-ratio: 3 / 4;
+	aspect-ratio: 1 / 1;
 	border-radius: 8px;
-	background:
-		linear-gradient(135deg, rgba(185, 155, 100, 0.14), transparent 58%),
-		#f2f0eb;
 }
 
 .product-card__media img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
+	object-fit: contain;
 	transition: transform 220ms ease, filter 220ms ease;
 }
 
